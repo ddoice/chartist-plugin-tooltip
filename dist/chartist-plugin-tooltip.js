@@ -10,7 +10,7 @@
     // like Node.
     module.exports = factory(require("chartist"));
   } else {
-    root['Chartist.plugins.tooltip'] = factory(Chartist);
+    root['Chartist.plugins.tooltips'] = factory(Chartist);
   }
 }(this, function (Chartist) {
 
@@ -201,6 +201,6 @@
 
   } (window, document, Chartist));
 
-  return Chartist.plugins.tooltip;
+  return Chartist.plugins.tooltips;
 
 }));
